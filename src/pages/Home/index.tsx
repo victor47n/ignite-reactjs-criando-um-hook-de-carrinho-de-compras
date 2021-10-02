@@ -26,8 +26,6 @@ const Home = (): JSX.Element => {
   const { addProduct, cart } = useCart();
 
   const cartItemsAmount = cart.reduce((sumAmount, product) => {
-    // const newSumAmount = { ...sumAmount };
-
     if (!sumAmount[product.id]) {
       sumAmount[product.id] = 0;
     }
